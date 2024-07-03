@@ -29,9 +29,9 @@ const productosArray = [
       img: 'https://cdn-icons-png.flaticon.com/512/2771/2771403.png',
     },
     {
-        id: 4,
-        nombre: 'Corte degrade',
-        descripcion: 'Corte de cabelo com degradê.',
+        id: 5,
+        nombre: 'Corte Combo',
+        descripcion: 'Cabelo, sobrancelha, barba e alisamento',
         precio: 65.00,
         img: 'https://cdn-icons-png.flaticon.com/512/2771/2771403.png',
       },
@@ -142,24 +142,24 @@ const productosArray = [
   });
   
   // Dados dos funcionários
-  const funcionarios = [
-    {
-      nome: 'João',
-      horarios: ['08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-12:00', 'Folga']
-    },
-    {
-      nome: 'Bruno',
-      horarios: ['09:00-17:00', '09:00-17:00', '09:00-17:00', '09:00-17:00', '09:00-17:00', '09:00-13:00', 'Folga']
-    },
-    {
-      nome: 'Moises',
-      horarios: ['10:00-18:00', '10:00-18:00', '10:00-18:00', '10:00-18:00', '10:00-18:00', '10:00-14:00', 'Folga']
-    },
-    {
-      nome: 'Corno',
-      horarios: ['08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-12:00', 'Folga']
-    }
-  ];
+ // const funcionarios = [
+    //{
+     // nome: 'João',
+      //horarios: ['08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-12:00', 'Folga']
+   // },
+    //{
+     // nome: 'Bruno',
+      //horarios: ['09:00-17:00', '09:00-17:00', '09:00-17:00', '09:00-17:00', '09:00-17:00', '09:00-13:00', 'Folga']
+    //},
+    //{
+     // nome: 'Moises',
+     // horarios: ['10:00-18:00', '10:00-18:00', '10:00-18:00', '10:00-18:00', '10:00-18:00', '10:00-14:00', 'Folga']
+    //},
+    //{
+     // nome: 'Corno',
+      //horarios: ['08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-16:00', '08:00-12:00', 'Folga']
+    //}
+  //];
   
   // Função para renderizar a tabela de horários
   const renderizarHorarios = () => {

@@ -55,7 +55,7 @@ th {
 }
 
 .button {
-    padding: 10px 20px;
+    padding: 3px 8px; /*  button de - e + na questão de quantidade da tabela*/
     background-color: #0095f6; /* Cor do Instagram */
     color: #fff;
     border: none;

@@ -9,7 +9,7 @@
 <body>
   <h1>Versão Brasileira</h1>
 
-  <!-- Tabla - Produtos del Carrito -->
+  <!-- Tabela - Produtos do Carrinho -->
   <div class="tabla-calculo" id="tabla-calculo">
     <table class="tabla">
       <caption class="titulo-tabla">Corte Selecionado:</caption>
@@ -21,98 +21,86 @@
           <th class="border-top-right">Preço Total</th>
         </tr>
       </thead>
-      <tbody id="carrito-body">
-
-      </tbody>
+      <tbody id="carrito-body"></tbody>
       <tfoot id="footer">
-        <tr><td class="border-bottom-left border-bottom-right" colspan = 4>Não há nenhum elemento no carrinho!</td></tr>
+        <tr><td class="border-bottom-left border-bottom-right" colspan="4">Não há nenhum elemento no carrinho!</td></tr>
       </tfoot>
     </table>
   </div>
-  <!-- Template de las filas -->
+
+  <!-- Template das filas -->
   <template id="agregar-producto-al-carro">
     <tr>
-          <td id="producto">Corte Masculino</td>
-          <td><button id="menos-cantidad" class="button">-</button><span id="cant">1</span><button id='mas-cantidad' class="button">+</button></td>
-          <td class="precio-tabla" id="precio-uni">50.00</td>
-          <td class="precio-tabla" id="precio-total-prod">50.00</td>
-        </tr>
+      <td id="producto">Corte Masculino</td>
+      <td>
+        <button id="menos-cantidad" class="button">-</button>
+        <span id="cant">1</span>
+        <button id="mas-cantidad" class="button">+</button>
+      </td>
+      <td class="precio-tabla" id="precio-uni">50.00</td>
+      <td class="precio-tabla" id="precio-total-prod">50.00</td>
+    </tr>
   </template>
-  <!-- Template del footer de la tabla -->
+
+  <!-- Template do footer da tabela -->
   <template id="tfooter">
-    <tr class="none">
-      <td colspan = 2 class="border-bottom-left"><button id="vaciar-tabla" class="button">Esvaziar carrinho</button></td>
+    <tr>
+      <td colspan="2" class="border-bottom-left">
+        <button id="vaciar-tabla" class="button">Esvaziar carrinho</button>
+      </td>
       <td class="negrita">Preço Total</td>
       <td id="total-a-pagar" class="precio-tabla border-bottom-right negrita">0.00</td>
     </tr>
   </template>
 
   <!-- Aqui se insertan las cards de productos con javascript-->
-  <div class="contenedor-productos">
-    
-  </div>
+  <div class="contenedor-productos"></div>
 
-  <!-- template del producto -->
+  <!-- Template do produto -->
   <template id="template-prod">
     <article class="cartola">
-     <!-- Imagen del producto -->
-     <div class="contenedor-img">
-      <img src="" alt="">
-     </div>
-     <!-- Nombre y descripción del producto -->
-     <div class="div-info">
-       <h2 class="nombre-prod">Nome do Corte</h2>
-       <hr class="separador">
-       <p class="descripcion-prod">Descrição do corte</p>
-     </div>
-     <!-- Precio y Agregar al carrito -->
-     <div class="div-precio-boton">
+      <!-- Imagen del producto -->
+      <div class="contenedor-img">
+        <img src="" alt="">
+      </div>
+      <!-- Nome e descrição do produto -->
+      <div class="div-info">
+        <h2 class="nombre-prod">Nome do Corte</h2>
+        <hr class="separador">
+        <p class="descripcion-prod">Descrição do corte</p>
+      </div>
+      <!-- Precio y Agregar al carrito -->
+      <div class="div-precio-boton">
         <p class="precio">50.00</p>
         <button class="boton">Adicionar</button>
-     </div>
+      </div>
     </article>
   </template>
 
   <!-- Tabela - Horários dos Funcionários -->
-<!-- Lista - Cortes por Funcionário -->
-<!--
-    <section id="cortes">
-    <h2>Cortes por Funcionário</h2>
-    <ul id="lista-cortes">
-      
-    </ul>
-    <div class="botoes-cortes">
-      <button onclick="registrarCorte('João')">+</button>
-      <button onclick="registrarCorte('Bruno')">+</button>
-      <button onclick="registrarCorte('Moises')">+</button>
-      <button onclick="registrarCorte('Corno')">+</button>
-    
-    </div> 
---> 
-
-
-<div class="tabela-horarios" id="tabela-horarios">
-  <table class="horarios-table">
-    <caption class="titulo-tabla">Horários dos Funcionários</caption>
-    <thead class="cabecera border-top-right">
-      <tr>
-        <th class="border-top-left">Nome</th>
-        <th>Segunda</th>
-        <th>Terça</th>
-        <th>Quarta</th>
-        <th>Quinta</th>
-        <th>Sexta</th>
-        <th>Sábado</th>
-        <th class="border-top-right">Domingo</th>
-      </tr>
-    </thead>
-    <tbody id="horarios-body">
-      <!-- Linhas serão adicionadas dinamicamente -->
-    </tbody>
-  </table>
-</div>
-
-
+  <!--
+    <div class="tabela-horarios" id="tabela-horarios">
+    <table class="horarios-table">
+      <caption class="titulo-tabla">Horários dos Funcionários</caption>
+      <thead class="cabecera border-top-right">
+        <tr>
+          <th class="border-top-left">Nome</th>
+          <th>Segunda</th>
+          <th>Terça</th>
+          <th>Quarta</th>
+          <th>Quinta</th>
+          <th>Sexta</th>
+          <th>Sábado</th>
+          <th class="border-top-right">Domingo</th>
+        </tr>
+      </thead>
+      <tbody id="horarios-body">
+        <!-- Linhas serão adicionadas dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+  -->
+  
 
   <script src="index.js"></script>
 </body>
