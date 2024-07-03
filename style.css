@@ -1,0 +1,268 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo da Tabela de Cálculo */
+.tabla-calculo {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tabla {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.titulo-tabla {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #0095f6; /* Cor do Instagram */
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.precio-tabla::before {
+    content: 'R$';
+    padding-right: 0.4rem;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #0095f6; /* Cor do Instagram */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0077b6; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilo dos Produtos */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os itens na horizontal */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.cartola {
+    width: 230px;
+    height: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cartola:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-img {
+    height: 127px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.div-info {
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.nombre-prod {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.separador {
+    width: 80%;
+    margin: 0.5rem auto;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.descripcion-prod {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.div-precio-boton {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+.precio {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.boton {
+    background-color: #0095f6; /* Cor do Instagram */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #0077b6; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilo da Tabela de Funcionários e Horários */
+.tabela-funcionarios {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.tabela-funcionarios th, .tabela-funcionarios td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabela-funcionarios th {
+    background-color: #0095f6; /* Cor do Instagram */
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tabela-funcionarios td {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Estilos para a seção de cortes e tabela de horários*/
+#cortes {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#lista-cortes {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#lista-cortes li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.botoes-cortes {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.botoes-cortes button {
+    background-color: #0095f6; /* Cor do Instagram */
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes-cortes button:hover {
+    background-color: #0077b6; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Estilo do formulário de registro de cortes */
+.form-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.form-registro label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.form-registro input[type="text"],
+.form-registro input[type="number"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-registro button {
+    background-color: #0095f6; /* Cor do Instagram */
+    color: #610e0e;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.form-registro button:hover {
+    background-color: #0077b6; /* Tom mais escuro ao passar o mouse */
+}
