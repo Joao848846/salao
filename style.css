@@ -14,7 +14,8 @@ h1 {
 
 /* Estilo da Tabela de Cálculo */
 .tabla-calculo {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     background: #fff;
     border-radius: 8px;
@@ -77,7 +78,8 @@ th {
 }
 
 .cartola {
-    width: 230px;
+    width: 100%;
+    max-width: 230px;
     height: 300px;
     background: #fff;
     border-radius: 8px;
@@ -88,7 +90,6 @@ th {
     display: flex;
     flex-direction: column;
 }
-
 
 .cartola:hover {
     transform: translateY(-5px);
@@ -159,7 +160,8 @@ img {
 
 /* Estilo da Tabela de Funcionários e Horários */
 .tabela-funcionarios {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     background: #fff;
     border-radius: 8px;
@@ -185,7 +187,7 @@ img {
     color: #333;
 }
 
-/* Estilos para a seção de cortes e tabela de horários*/
+/* Estilos para a seção de cortes e tabela de horários */
 #cortes {
     margin-top: 20px;
     padding: 20px;
@@ -265,4 +267,61 @@ img {
 
 .form-registro button:hover {
     background-color: #0077b6; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .tabla-calculo, .tabela-funcionarios {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .cartola {
+        width: 100%;
+        max-width: none;
+    }
+
+    .form-registro {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .botoes-cortes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .botoes-cortes button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 0.5rem;
+    }
+
+    .titulo-tabla {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .div-precio-boton {
+        flex-direction: column;
+    }
+
+    .precio {
+        margin-bottom: 10px;
+    }
+
+    .boton {
+        padding: 5px 10px;
+    }
+
+    .form-registro label, 
+    .form-registro input[type="text"], 
+    .form-registro input[type="number"] {
+        font-size: 0.9rem;
+    }
 }

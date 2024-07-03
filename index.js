@@ -35,6 +35,20 @@ const productosArray = [
         precio: 65.00,
         img: 'https://cdn-icons-png.flaticon.com/512/2771/2771403.png',
       },
+      {
+        id: 6,
+        nombre: 'Corte Combo  + Alisamento',
+        descripcion: 'Cabelo, sobrancelha, barba e alisamento',
+        precio: 65.00,
+        img: 'https://cdn-icons-png.flaticon.com/512/2771/2771403.png',
+      },
+      {
+        id: 7,
+        nombre: 'Corte Combo2',
+        descripcion: 'Cabelo, sobrancelha, barba e alisamento',
+        precio: 65.00,
+        img: 'https://cdn-icons-png.flaticon.com/512/2771/2771403.png',
+      },
       
   ];
   
